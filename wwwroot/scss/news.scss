@@ -1,0 +1,63 @@
+﻿@import 'base.scss';
+
+.News {
+    &__label {
+        font-family: $font-Montserrat;
+        font-weight: 700;
+        font-size: 38px;
+        color: $color-black;
+        margin-bottom: 32px;
+    }
+
+    &__container {
+        width: 100%;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-between;
+    }
+
+    padding-top: $news-padding;
+    padding-bottom: $news-padding;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+.New {
+    &__image {
+        width: 100%;
+        border-top-left-radius: 20px;
+        border-top-left-radius: 20px;
+    }
+
+    &__date {
+        font-family: $font-Montserrat;
+        font-weight: 400;
+        font-size: 14px;
+        color: $color-black;
+        margin-top: 16px;
+        margin-bottom: 16px;
+    }
+
+    &__label {
+        font-family: $font-Montserrat;
+        font-weight: 500;
+        font-size: 20px;
+        color: $color-black;
+    }
+
+    &__text {
+        font-family: $font-OpenSans;
+        font-weight: 400;
+        font-size: 16px;
+        color: $color-grey;
+        margin-top: 8px;
+    }
+
+    width: 20%;
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+    justify-content: start;
+}

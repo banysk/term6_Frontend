@@ -1,0 +1,66 @@
+﻿@import 'settings.scss';
+
+.Projects {
+    &__label {
+        font-family: $font-Montserrat;
+        font-weight: 700;
+        font-size: 38px;
+        color: $color-black;
+        margin-bottom: 32px;
+    }
+
+    &__container {
+        width: 100%;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-between;
+    }
+
+    padding-top: $projects-padding;
+    padding-bottom: $projects-padding;
+}
+
+.ProjectCard {
+    &__left {
+        width: $projects-size;
+        height: $projects-size;
+        background-color: $color-white;
+        border-top-left-radius: 20px;
+        border-bottom-left-radius: 20px;
+
+        &__label {
+            font-family: $font-Montserrat;
+            font-weight: 500;
+            font-size: 20px;
+            color: $color-black;
+            margin-left: 32px;
+            margin-top: 32px;
+            margin-right: 10px;
+            margin-bottom: 12px;
+        }
+
+        &__text {
+            font-family: $font-OpenSans;
+            font-weight: 400;
+            font-size: 16px;
+            color: $color-grey;
+            margin-left: 32px;
+            margin-bottom: 32px;
+            margin-right: 10px;
+        }
+    }
+
+    &__right {
+        width: $projects-size;
+
+        &__image {
+            width: $projects-size;
+            height: $projects-size;
+            border-top-right-radius: 20px;
+            border-bottom-right-radius: 20px;
+        }
+    }
+
+    display: flex;
+}

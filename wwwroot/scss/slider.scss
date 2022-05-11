@@ -1,0 +1,111 @@
+﻿@import 'base.scss';
+
+.Slider {
+    &__text {
+        &__big {
+            font-family: $font-Montserrat;
+            font-weight: 700;
+            font-size: 46px;
+            color: $color-white;
+        }
+
+        &__small {
+            font-family: $font-OpenSans;
+            font-weight: 400;
+            font-size: 16px;
+            color: $color-white;
+        }
+
+        position: absolute;
+        z-index: 4;
+        left: 10%;
+        width: 30%
+    }
+
+    &__image {
+        position: relative;
+        z-index: 0;
+        display: none;
+        width: 100%;
+        border-radius: 30px;
+
+        &--active {
+            display: block;
+        }
+    }
+
+    &__button {
+        width: 48px;
+        height: 48px;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+        z-index: 10;
+        background-color: $color-secondary;
+        border-radius: 10px;
+
+        &__image {
+            width: 12px;
+            height: 12px;
+        }
+
+        &--left {
+            position: absolute;
+            top: calc(50% - 24px);
+            left: 16px;
+        }
+
+        &--right {
+            position: absolute;
+            top: calc(50% - 24px);
+            right: 16px;
+        }
+    }
+
+    &__dots {
+        &__dot {
+            background-color: $color-white;
+            height: 12px;
+            width: 12px;
+            border-radius: 6px;
+            margin: 8px;
+
+            &:hover {
+                cursor: pointer;
+                background-color: $color-secondary;
+            }
+
+            &--active {
+                background-color: $color-secondary;
+            }
+        }
+
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        position: absolute;
+        top: calc(100% - 40px);
+    }
+
+    margin-top: $slider-margin;
+    margin-bottom: calc($slider-margin * 4);
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.fade {
+    animation: fade 0.9s;
+}
+
+@keyframes fade {
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+    }
+}

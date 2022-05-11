@@ -1,0 +1,165 @@
+﻿@{
+    ViewData["Title"] = "Home Page";
+}
+
+@section Slider {
+    <div class="Container Container--default">
+        <div class="Slider">
+            <div class="Slider__text">
+                <div class="Slider__text__big">
+                    Проектируем<br /> и строим<br /> загородные дома
+                </div>
+                <div class="Slider__text__small">
+                    Строим дома «под ключ»: от этапа проектирования<br /> и до финишной отделки помещений
+                </div>
+            </div>
+
+            <img class="Slider__image Slider__image--active" src="~/assets/slider/image1.png"/>
+            <img class="Slider__image" src="~/assets/slider/image2.jpg"/>
+            <img class="Slider__image" src="~/assets/slider/image3.jpg"/>
+
+            <div class="Slider__button Slider__button--left" onclick="Slider(-1)">
+                <img class="Slider__button__image" src="~/assets/icons/left.svg" />
+            </div>
+
+            <div class="Slider__button Slider__button--right" onclick="Slider(1)">
+                <img class="Slider__button__image" src="~/assets/icons/right.svg" />
+            </div>
+
+            <div class="Slider__dots">
+                <div class="Slider__dots__dot Slider__dots__dot--active"></div>
+                <div class="Slider__dots__dot"></div>
+                <div class="Slider__dots__dot"></div>
+            </div>
+        </div>
+    </div>
+    <script src="~/js/slider.js"></script>
+}
+
+@section AboutUs {
+    <div class="Container Container--default">
+        <div class="AboutUs">
+            <div class="AboutUs__left">
+                <div class="AboutUs__left__label">
+                    Каждый проект для нас — важный
+                </div>
+
+                <div class="AboutUs__left__text">
+                    Мы строительная компания полного цикла.
+                    <br /><br />
+                    Вникаем во все детали, разрабатываем планировку будущего дома, продумываем конструктивные решения и общую архитектурную концепцию
+                </div>
+            </div>
+
+            <div class="AboutUs__right">
+                <div class="Card">
+                    <img class="Card__icon" src="~/assets/icons/house.svg" />
+                    <div class="Card__label">
+                        57 домов
+                    </div>
+                    <div class="Card__text">
+                        спроектировали и построили “под ключ”
+                    </div>
+                </div>
+
+                <div class="Card">
+                    <img class="Card__icon" src="~/assets/icons/calendar.svg" />
+                    <div class="Card__label">
+                        14 лет
+                    </div>
+                    <div class="Card__text">
+                        мы на рынке загородного строительства
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+}
+
+@section Projects {
+    <div class="Container Container--primary">
+        <div class="Projects">
+            <div class="Projects__label">
+                Реализованные проекты
+            </div>
+
+            <div class="Projects__container">
+                <div class="ProjectCard">
+                    <div class="ProjectCard__left">
+                        <div class="ProjectCard__left__label">
+                            Дом в скандинавском стиле
+                        </div>
+                        <div class="ProjectCard__left__text">
+                            Одноэтажный дом из газобетона габаритными размерами 10.73 х 10.73 м. и жилой площадью 101 кв. м. с вальмовой кровлей
+                            <br /><br />
+                            Построен по индивидуальному проекту.
+                        </div>
+                    </div>
+                    <div class="ProjectCard__right">
+                        <img class="ProjectCard__right__image" src="~/assets/projects/proj1.png" />
+                    </div>
+                </div>
+
+                <div class="ProjectCard">
+                    <div class="ProjectCard__left">
+                        <div class="ProjectCard__left__label">
+                            Дом из газобетона
+                        </div>
+                        <div class="ProjectCard__left__text">
+                            Одноэтажный дом габаритными размерами 15.2 х 9.7м. Приведенная площадь – 127.7 м.кв.
+                            <br /><br />
+                            Три спальные комнаты, два сан.узла, большая кухня-гостиная с выходом на террасу. 
+                        </div>
+                    </div>
+                    <div class="ProjectCard__right">
+                        <img class="ProjectCard__right__image" src="~/assets/projects/proj2.png" />
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+}
+
+@section News {
+    <div class="Container Container--default">
+        <div class="News">
+            <div class="News__label">
+                Новости
+            </div>
+
+            <div class="Button Button--news Spacer--left">
+                Все новости
+            </div>
+
+            <div class="News__container">
+                <div class="New">
+                    <img class="New__image" src="~/assets/news/n1.png" />
+                    <div class="New__date">20 авг 2021</div>
+                    <div class="New__label">Как сделать строительство дешевле?</div>
+                    <div class="New__text">Строительство дома можно сделать дешевле — выбрав проект...</div>
+                </div>
+
+                <div class="New">
+                    <img class="New__image" src="~/assets/news/n2.png" />
+                    <div class="New__date">20 авг 2021</div>
+                    <div class="New__label">Почему Гуд Вилл строит лучшие дома?</div>
+                    <div class="New__text">Хотим обрадовать тех, кто планирует переезд из квартиры в дом...</div>
+                </div>
+
+                <div class="New">
+                    <img class="New__image" src="~/assets/news/n3.png" />
+                    <div class="New__date">20 авг 2021</div>
+                    <div class="New__label">Преимущества и недостатки частного дома</div>
+                    <div class="New__text">Первое и главное: строим дом индивидуально для вас, по вашим...</div>
+                </div>
+
+                <div class="New">
+                    <img class="New__image" src="~/assets/news/n4.png" />
+                    <div class="New__date">20 авг 2021</div>
+                    <div class="New__label">Из чего мы строим дома в ипотеку?</div>
+                    <div class="New__text">Самый популярный вопрос наших клиентов касается материалов, которы...</div>
+                </div>
+            </div>
+        </div>
+    </div>
+}

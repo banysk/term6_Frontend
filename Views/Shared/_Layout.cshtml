@@ -1,0 +1,97 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>@ViewData["Title"] - term6_Frontend</title>
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600;1,700;1,800&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="css/main.css">
+    </head>
+
+    <body>
+        <header>
+            <div class="Container Container--default">
+                <div class="Header">
+                    <img class="Header__logo" src="~/assets/logo_dark.png"/>
+
+                    <ul class="List List--row">
+                    @{
+                        foreach(string link in ViewBag.NavLinks)
+                        {
+                            <li class="List__item"><a class="Link Link--grey">@link</a></li>
+                        }
+                    }
+                    </ul>
+
+                    <div class="IconLink IconLink--rm Spacer--left">
+                        <img class="IconLink__icon" src="~/assets/icons/phone.png"/>
+                        <a class="IconLink__link IconLink__link--tertiary" href="tel:@ViewBag.Phone">@ViewBag.Phone</a>
+                    </div>
+
+                    <div class="Button Button--secondary">
+                        Оставить заявку
+                    </div>
+                </div>
+            </div>
+        </header>
+
+        @RenderSection("Slider", false)
+
+        @RenderSection("AboutUs", false)
+
+        @RenderSection("Projects", false)
+
+        @RenderSection("News", false)
+
+        <footer>
+            <div class="Container Container--tertiary">
+                <div class="Footer">
+                    <img class="Footer__logo" src="~/assets/logo_light.png"/>
+
+                    <ul class="List List--col List--lm120">
+                    @{
+                        foreach(string link in ViewBag.NavLinks)
+                        {
+                            <li class="List__item"><a class="Link Link--white">@link</a></li>
+                        }
+                    }
+                    </ul>
+
+                    <ul class="List List--col List--lm120">
+                        <li class="List__item IconLink">
+                            <img class="IconLink__icon" src="~/assets/icons/phone.png" />
+                            <a class="IconLink__link IconLink__link--white" href="tel:@ViewBag.Phone">@ViewBag.Phone</a>
+                        </li>
+                        <li class="List__item IconLink">
+                            <img class="IconLink__icon" src="~/assets/icons/mail.png" />
+                            <a class="IconLink__link IconLink__link--white" href="mailto:@ViewBag.Mail">@ViewBag.Mail</a>
+                        </li>
+                        <li class="List__item IconLink">
+                            <img class="IconLink__icon" src="~/assets/icons/address.png" />
+                            <a class="IconLink__link IconLink__link--white">@ViewBag.Address</a>
+                        </li>
+                    </ul>
+
+                    <div class="Button Button--secondary Spacer--left">
+                        Оставить заявку
+                    </div>
+
+                    <ul id="special" class="List List--row">
+                        <li class="List__item">
+                            <a class="Link Link--special">© Загдом, 2021</a>
+                        </li>
+                        <li class="List__item">
+                            <a class="Link Link--special">Политика конфиденциальности</a>
+                        </li>
+                        <li class="List__item">
+                            <a class="Link Link--special">Пользовательское соглашение</a>
+                        </li>
+                    </ul>
+
+                </div>
+            </div>
+        </footer>
+    </body>
+</html>

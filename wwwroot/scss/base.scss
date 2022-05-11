@@ -1,0 +1,151 @@
+﻿@import 'settings.scss';
+
+.Container {
+    padding-left: $container-padding;
+    padding-right: $container-padding;
+    position: relative;
+
+    &--default {
+        background-color: $color-white;
+    }
+
+    &--primary {
+        background-color: $color-primary;
+    }
+
+    &--tertiary {
+        background-color: $color-tertiary;
+    }
+}
+
+.List {
+    display: flex;
+    padding-left: 0;
+
+    &--row {
+        flex-direction: row;
+        justify-content: start;
+        align-items: center;
+
+        .List__item:not(:last-child) {
+            margin-right: 24px;
+        }
+    }
+
+    &--col {
+        flex-direction: column;
+        justify-content: start;
+        align-items: start;
+
+        .List__item:not(:last-child) {
+            margin-bottom: 24px;
+        }
+    }
+
+    &--lm120 {
+        margin-left: 120px;
+    }
+
+    &__item {
+        list-style-type: none;
+    }
+}
+
+.Link {
+    font-family: $font-OpenSans;
+    font-weight: 400;
+    font-size: 16px;
+
+    &--white {
+        color: $color-white;
+    }
+
+    &--special {
+        color: $color-white;
+        opacity: 0.6;
+        font-size: 14px;
+    }
+
+    &--grey {
+        color: $color-grey;
+    }
+
+    &:active,
+    &:focus,
+    &:hover {
+        cursor: pointer;
+        color: $color-black;
+    }
+}
+
+.IconLink {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: start;
+
+    &__icon {
+        width: $icon-size;
+        height: $icon-size;
+        margin-right: 8px;
+    }
+
+    &__link {
+        font-family: $font-Montserrat;
+        font-weight: 400;
+        font-size: 14px;
+
+        &--white {
+            color: $color-white;
+        }
+
+        &--tertiary {
+            color: $color-tertiary;
+        }
+
+        &:active,
+        &:focus,
+        &:hover {
+            cursor: pointer;
+        }
+    }
+
+    &--rm {
+        margin-right: $header-padding;
+    }
+}
+
+.Spacer {
+    &--left {
+        margin-left: auto;
+    }
+
+    &--right {
+        margin-right: auto;
+    }
+}
+
+.Button {
+    height: 50px;
+    width: 200px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    border-radius: 10px;
+    font-family: $font-Montserrat;
+    font-weight: 500;
+    font-size: 14px;
+    color: $color-white;
+
+    &--news {
+        background-color: transparent;
+        border-color: $color-secondary;
+        color: $color-secondary;
+        border: solid 1px;
+    }
+
+    &--secondary {
+        background-color: $color-secondary;
+    }
+}

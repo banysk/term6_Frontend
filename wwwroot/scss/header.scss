@@ -1,0 +1,17 @@
+﻿@import 'base.scss';
+
+.Header {
+    &__logo {
+        width: $logo-width;
+        height: $logo-height;
+        margin-right: 80px;
+    }
+
+    padding-top: $header-padding;
+    padding-bottom: $header-padding;
+
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: start;
+}

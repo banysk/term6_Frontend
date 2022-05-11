@@ -1,0 +1,193 @@
+/* standart colors */
+/* color scheme */
+/* fonts */
+/* padding */
+/* size */
+.Container {
+  padding-left: 150px;
+  padding-right: 150px;
+  position: relative;
+}
+.Container--default {
+  background-color: #ffffff;
+}
+.Container--primary {
+  background-color: #F5F7F3;
+}
+.Container--tertiary {
+  background-color: #254741;
+}
+
+.List {
+  display: flex;
+  padding-left: 0;
+}
+.List--row {
+  flex-direction: row;
+  justify-content: start;
+  align-items: center;
+}
+.List--row .List__item:not(:last-child) {
+  margin-right: 24px;
+}
+.List--col {
+  flex-direction: column;
+  justify-content: start;
+  align-items: start;
+}
+.List--col .List__item:not(:last-child) {
+  margin-bottom: 24px;
+}
+.List--lm120 {
+  margin-left: 120px;
+}
+.List__item {
+  list-style-type: none;
+}
+
+.Link {
+  font-family: "Open Sans", sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+}
+.Link--white {
+  color: #ffffff;
+}
+.Link--special {
+  color: #ffffff;
+  opacity: 0.6;
+  font-size: 14px;
+}
+.Link--grey {
+  color: #666666;
+}
+.Link:active, .Link:focus, .Link:hover {
+  cursor: pointer;
+  color: #000000;
+}
+
+.IconLink {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: start;
+}
+.IconLink__icon {
+  width: 16px;
+  height: 16px;
+  margin-right: 8px;
+}
+.IconLink__link {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 400;
+  font-size: 14px;
+}
+.IconLink__link--white {
+  color: #ffffff;
+}
+.IconLink__link--tertiary {
+  color: #254741;
+}
+.IconLink__link:active, .IconLink__link:focus, .IconLink__link:hover {
+  cursor: pointer;
+}
+.IconLink--rm {
+  margin-right: 24px;
+}
+
+.Spacer--left {
+  margin-left: auto;
+}
+.Spacer--right {
+  margin-right: auto;
+}
+
+.Button {
+  height: 50px;
+  width: 200px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  border-radius: 10px;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 500;
+  font-size: 14px;
+  color: #ffffff;
+}
+.Button--news {
+  background-color: transparent;
+  border-color: #03B766;
+  color: #03B766;
+  border: solid 1px;
+}
+.Button--secondary {
+  background-color: #03B766;
+}
+
+.AboutUs {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: end;
+  margin-bottom: 160px;
+  width: 100%;
+}
+.AboutUs__left {
+  width: 40%;
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+  align-items: start;
+}
+.AboutUs__left__label {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 700;
+  font-size: 38px;
+  color: #000000;
+  margin-bottom: 20px;
+}
+.AboutUs__left__text {
+  font-family: "Open Sans", sans-serif;
+  font-weight: 400;
+  font-size: 20px;
+  color: #666666;
+}
+.AboutUs__right {
+  width: 50%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: stretch;
+}
+
+.Card {
+  background-color: #F5F7F3;
+  display: flex;
+  flex-direction: column;
+  justify-content: end;
+  align-items: start;
+  width: 40%;
+  padding: 24px;
+  border-radius: 20px;
+}
+.Card__icon {
+  width: 20px;
+  height: 20px;
+}
+.Card__label {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 500;
+  font-size: 24px;
+  color: #000000;
+  margin-top: 24px;
+  margin-bottom: 8px;
+}
+.Card__text {
+  font-family: "Open Sans", sans-serif;
+  font-weight: 400;
+  font-size: 20px;
+  color: #666666;
+}
+
+/*# sourceMappingURL=aboutus.css.map */
