@@ -7,77 +7,12 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <Content Remove="wwwroot\scss\aboutus.scss" />
-    <Content Remove="wwwroot\scss\adaptive.scss" />
-    <Content Remove="wwwroot\scss\base.scss" />
-    <Content Remove="wwwroot\scss\footer.scss" />
-    <Content Remove="wwwroot\scss\header.scss" />
-    <Content Remove="wwwroot\scss\main.scss" />
-    <Content Remove="wwwroot\scss\news.scss" />
-    <Content Remove="wwwroot\scss\projects.scss" />
-    <Content Remove="wwwroot\scss\settings.scss" />
-    <Content Remove="wwwroot\scss\slider.scss" />
-  </ItemGroup>
-
-  <ItemGroup>
     <PackageReference Include="AspNetCore.SassCompiler" Version="1.51.0.4" />
   </ItemGroup>
 
   <ItemGroup>
-    <None Include="wwwroot\scss\aboutus.scss" />
-    <None Include="wwwroot\scss\adaptive.scss" />
-    <None Include="wwwroot\scss\base.scss" />
-    <None Include="wwwroot\scss\footer.scss" />
-    <None Include="wwwroot\scss\header.scss" />
-    <None Include="wwwroot\scss\main.scss" />
-    <None Include="wwwroot\scss\news.scss" />
-    <None Include="wwwroot\scss\projects.scss" />
-    <None Include="wwwroot\scss\settings.scss" />
-    <None Include="wwwroot\scss\slider.scss" />
-  </ItemGroup>
-
-  <ItemGroup>
-    <UpToDateCheckInput Remove="wwwroot\scss\main.scss" />
-  </ItemGroup>
-
-  <ItemGroup>
-    <UpToDateCheckInput Remove="wwwroot\scss\settings.scss" />
-  </ItemGroup>
-
-  <ItemGroup>
     <Folder Include="wwwroot\css\" />
-  </ItemGroup>
-
-  <ItemGroup>
-    <UpToDateCheckInput Remove="wwwroot\scss\base.scss" />
-  </ItemGroup>
-
-  <ItemGroup>
-    <UpToDateCheckInput Remove="wwwroot\scss\header.scss" />
-  </ItemGroup>
-
-  <ItemGroup>
-    <UpToDateCheckInput Remove="wwwroot\scss\footer.scss" />
-  </ItemGroup>
-
-  <ItemGroup>
-    <UpToDateCheckInput Remove="wwwroot\scss\slider.scss" />
-  </ItemGroup>
-
-  <ItemGroup>
-    <UpToDateCheckInput Remove="wwwroot\scss\aboutus.scss" />
-  </ItemGroup>
-
-  <ItemGroup>
-    <UpToDateCheckInput Remove="wwwroot\scss\projects.scss" />
-  </ItemGroup>
-
-  <ItemGroup>
-    <UpToDateCheckInput Remove="wwwroot\scss\news.scss" />
-  </ItemGroup>
-
-  <ItemGroup>
-    <UpToDateCheckInput Remove="wwwroot\scss\adaptive.scss" />
+    <Folder Include="wwwroot\scss\" />
   </ItemGroup>
 
 </Project>

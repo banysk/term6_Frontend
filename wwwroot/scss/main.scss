@@ -1,15 +1,23 @@
-﻿@import 'header.scss';
-@import 'footer.scss';
-@import 'slider.scss';
-@import 'aboutus.scss';
-@import 'projects.scss';
-@import 'news.scss';
-
-body, html {
+html, body {
     padding: 0;
     margin: 0;
+    width: 100%;
+    height: 100%;
+    position: relative;
 }
 
 a {
     text-decoration: none;
 }
+
+ul {
+    padding: 0;
+    
+    & li {
+        list-style-type: none;
+    }
+}
+
+@import 'navpage.scss';
+@import 'header.scss';
+@import 'slider.scss';

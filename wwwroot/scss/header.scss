@@ -1,17 +1,179 @@
-﻿@import 'base.scss';
+@import 'variables.scss';
 
 .Header {
-    &__logo {
-        width: $logo-width;
-        height: $logo-height;
-        margin-right: 80px;
+    background-color: $color-white;
+
+    &__container {
+        position: relative;
+        display: flex;
+        flex-direction: row;
+        justify-content: start;
+        align-items: center;
     }
+}
 
-    padding-top: $header-padding;
-    padding-bottom: $header-padding;
+/* phone */
+@media (min-width: 0px) {
+    .Header {
+        &__container {
+            padding: $s-padding;
+        }
 
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: start;
+        &__logo {
+            width: auto;
+            height: 32px;
+            margin-right: auto;
+        }
+
+        &__button {
+            display: none;
+
+            &:hover {
+                cursor: pointer;
+            }
+        }
+
+        &__button--mobile {
+            padding: 8px;
+            background-color: $color-secondary;
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            vertical-align: center;
+            margin-left: auto;
+            border-radius: 6px;
+
+            img {
+                height: 16px;
+                width: 16px;
+            }
+        }
+
+        &__list {
+            display: none;
+        }
+
+        &__icon {
+            display: none;
+        }
+
+        &__number {
+            display: none;
+        }
+    }  
+}
+/* tablet */
+@media (min-width: 768px) {
+    .Header {
+        &__container {
+            padding: $m-padding;
+        }
+
+        &__logo {
+            height: 36px;
+        }
+
+        &__button--mobile {
+            display: none;
+        }
+        
+        &__button {
+            padding: 14px;
+            background-color: $color-secondary;
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            vertical-align: center;
+            margin-left: auto;
+            border-radius: 10px;
+            font-family: $font-Montserrat;
+            font-weight: 500;
+            font-size: 14px;
+            color: $color-white;
+        }
+
+        &__list {
+            display: flex;
+            flex-direction: row;
+            justify-content: start;
+            align-items: center;
+    
+            li {
+                margin-left: 12px;
+                margin-right: 12px;
+                display: flex;
+                flex-direction: row;
+                justify-content: start;
+                align-items: center;
+            }
+
+            a {
+                font-family: $font-OpenSans;
+                font-weight: 400;
+                font-size: 16px;
+                color: $color-grey;
+
+                &:hover {
+                    cursor: pointer;
+                }
+            }
+        }
+    }  
+}
+/* desktop */
+@media (min-width: 1400px) {
+    .Header {
+        &__container {
+            padding-left: $l-padding;
+            padding-right: $l-padding;
+            padding-top: 20px;
+            padding-bottom: 20px;
+        }
+
+        &__logo {
+            height: 50px;
+            margin-right: 80px;
+        }
+
+        &__icon {
+            height: 16px;
+            width: 16px;
+            margin-right: 8px;
+            margin-left: auto;
+            display: block;
+        }
+
+        &__number {
+            & a {
+                font-family: $font-Montserrat;
+                font-weight: 400;
+                font-size: 14px;
+                color: $color-tertiary;
+
+                &:hover {
+                    cursor: pointer;
+                }
+            }
+            display: block;
+        }
+        
+        &__button {
+            padding: 25px;
+            margin-left: 20px;
+        }
+
+        &__list {
+            li {
+                margin-left: 16px;
+                margin-right: 16px;
+            }
+
+            a {
+                font-family: $font-OpenSans;
+                font-weight: 400;
+                font-size: 16px;
+                color: $color-grey;
+            }
+        }
+    }
 }

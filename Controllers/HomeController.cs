@@ -16,13 +16,15 @@ namespace term6_Frontend.Controllers
         public IActionResult Index()
         {
             ViewBag.Title = "Home";
-            ViewBag.Phone = "+7 (900) 900-90-90";
-            ViewBag.Mail = "info@gmail.com";
-            ViewBag.Address = "г. Владивосток ул. Выселковая 49, стр. 3";
             ViewBag.NavLinks = new List<string> {
                 "Реализованные проекты",
                 "Новости",
                 "Контакты"
+            };
+            ViewBag.Contacts = new List<List<string>>() {
+                new List<string>(){ "+7 (900) 900-90-90", "assets/icons/phone_w.svg"},
+                new List<string>(){ "info@gmail.com", "assets/icons/mail_w.svg"},
+                new List<string>(){ "г. Владивосток ул. Выселковая 49, стр. 3", "assets/icons/place_w.svg" }
             };
             return View();
         }
